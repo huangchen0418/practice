@@ -1,0 +1,6 @@
+class Solution {                             //实现int sqrt(int x)函数
+public:
+    int mySqrt(int x) {
+            return sqrt(x);
+        }
+};

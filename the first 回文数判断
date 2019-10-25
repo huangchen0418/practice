@@ -1,0 +1,14 @@
+class Solution{
+    public:
+    bool isPalindrome(int x){    
+    long int s,a=0;
+	s=x;
+	if(s<0) return false;
+	while(s!=0){
+        a=a*10+s%10;
+		s/=10;
+	}
+	if(a==x) return true;
+        else return false;
+    }
+};

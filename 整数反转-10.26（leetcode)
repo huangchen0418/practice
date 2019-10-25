@@ -1,0 +1,14 @@
+class Solution {
+public:
+    int reverse(int x) {
+        long int i=0;
+        while(x!=0){
+            i=i*10+x%10;
+            x/=10;
+        }
+        if(i>INT_MAX||i<INT_MIN) return 0;
+        else
+        return i;
+    }
+};
+//数值取值范围为 [−231,  231 − 1]，反转后整数溢出则返回0
